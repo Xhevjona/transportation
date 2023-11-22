@@ -42,42 +42,50 @@
 //     cursor: pointer;
 //   }
 // }
-@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+@mixin btn-border-drawing(
+  $color: #ccc,
+  $hover: black,
+  $width: 2px,
+  $vertical: top,
+  $horizontal: left,
+  $duration: 0.25s
+) {
   box-shadow: inset 0 0 0 $width $color;
   color: $color;
   transition: color $duration calc($duration / 3);
   position: relative;
-  
+
   &::before,
-  &::after { 
+  &::after {
     border: 0 solid transparent;
     box-sizing: border-box;
-    content: '';
+    content: "";
     pointer-events: none;
     position: absolute;
-    width: 0; height: 0;
-    
-    #{$vertical}: 0; 
+    width: 0;
+    height: 0;
+
+    #{$vertical}: 0;
     #{$horizontal}: 0;
   }
 
   &::before {
-    $h-side: if($horizontal == 'left', 'right', 'left');
-    
+    $h-side: if($horizontal == "left", "right", "left");
+
     border-#{$vertical}-width: $width;
     border-#{$h-side}-width: $width;
   }
-  
+
   &::after {
-    $v-side: if($vertical == 'top', 'bottom', 'top');
-    
+    $v-side: if($vertical == "top", "bottom", "top");
+
     border-#{$v-side}-width: $width;
     border-#{$horizontal}-width: $width;
   }
-  
+
   &:hover {
     color: $hover;
-    
+
     &::before,
     &::after {
       border-color: $hover;
@@ -85,10 +93,14 @@
       width: 100%;
       height: 100%;
     }
-    
-    &::before { transition-delay: 0s, 0s, $duration; }
-    
-    &::after { transition-delay: 0s, $duration, 0s; }
+
+    &::before {
+      transition-delay: 0s, 0s, $duration;
+    }
+
+    &::after {
+      transition-delay: 0s, $duration, 0s;
+    }
   }
 }
 
@@ -99,15 +111,15 @@
 //=== Button styling, semi-ignore
 .btn {
   background: none;
-  border: 2px solid ;
+  border: 2px solid;
   cursor: pointer;
   line-height: 1.5;
-  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  font: 700 1.2rem "Roboto Slab", sans-serif;
   padding: 10px 30px;
   letter-spacing: 0.05rem;
   margin-top: 50px;
   margin-left: 15%;
-  
+
   // &:focus { outline: 2px dotted #fafafa; }
 }
 
@@ -150,7 +162,7 @@
     border-radius: 10px;
     cursor: pointer;
   }
-  button:hover{
+  button:hover {
     border-color: #e4b829;
     color: #e4b829;
   }
@@ -198,20 +210,20 @@
     margin-top: 50px;
   }
 }
-  .learn-more {
-    background-color:transparent;
+.learn-more {
+  background-color: transparent;
+  color: #e4b829;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  text-decoration: none;
+  border: none;
+  i {
     color: #e4b829;
-    cursor: pointer;
-    margin: 0 auto;
-    display: block;
-    margin-top: 50px;
     text-decoration: none;
-    border: none;
-    i {
-      color: #e4b829;
-      text-decoration: none;
-    }
   }
+}
 
 .service {
   display: flex;
@@ -231,41 +243,49 @@
   }
 }
 
-@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+@mixin btn-border-drawing(
+  $color: #ccc,
+  $hover: black,
+  $width: 2px,
+  $vertical: top,
+  $horizontal: left,
+  $duration: 0.25s
+) {
   box-shadow: inset 0 0 0 $width $color;
   color: $color;
   transition: color $duration calc($duration / 3);
   position: relative;
-  
+
   &::before,
-  &::after { 
+  &::after {
     border: 0 solid transparent;
     box-sizing: border-box;
-    content: '';
+    content: "";
     pointer-events: none;
     position: absolute;
-    width: 0; height: 0;
-    #{$vertical}: 0; 
+    width: 0;
+    height: 0;
+    #{$vertical}: 0;
     #{$horizontal}: 0;
   }
 
   &::before {
-    $h-side: if($horizontal == 'left', 'right', 'left');
-    
+    $h-side: if($horizontal == "left", "right", "left");
+
     border-#{$vertical}-width: $width;
     border-#{$h-side}-width: $width;
   }
-  
+
   &::after {
-    $v-side: if($vertical == 'top', 'bottom', 'top');
-    
+    $v-side: if($vertical == "top", "bottom", "top");
+
     border-#{$v-side}-width: $width;
     border-#{$horizontal}-width: $width;
   }
-  
+
   &:hover {
     color: $hover;
-    
+
     &::before,
     &::after {
       border-color: $hover;
@@ -273,10 +293,14 @@
       width: 100%;
       height: 100%;
     }
-    
-    &::before { transition-delay: 0s, 0s, $duration; }
-    
-    &::after { transition-delay: 0s, $duration, 0s; }
+
+    &::before {
+      transition-delay: 0s, 0s, $duration;
+    }
+
+    &::after {
+      transition-delay: 0s, $duration, 0s;
+    }
   }
 }
 
@@ -287,10 +311,10 @@
 //=== Button styling, semi-ignore
 .quote-btn {
   background: none;
-  border: 2px solid ;
+  border: 2px solid;
   cursor: pointer;
   line-height: 1.5;
-  font: 600 1.1rem 'Roboto Slab', sans-serif;
+  font: 600 1.1rem "Roboto Slab", sans-serif;
   padding: 10px 30px;
   letter-spacing: 0.05rem;
   margin-top: 50px;
@@ -298,7 +322,7 @@
   margin: 0 auto;
   display: block;
   margin-top: 50px;
-  
+
   // &:focus { outline: 2px dotted #fafafa; }
 }
 .our-services {
@@ -459,42 +483,50 @@
 //   margin-top: 20px;
 //   border-radius: 5px;
 // }
-@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+@mixin btn-border-drawing(
+  $color: #ccc,
+  $hover: black,
+  $width: 2px,
+  $vertical: top,
+  $horizontal: left,
+  $duration: 0.25s
+) {
   box-shadow: inset 0 0 0 $width $color;
   color: $color;
   transition: color $duration calc($duration / 3);
   position: relative;
-  
+
   &::before,
-  &::after { 
+  &::after {
     border: 0 solid transparent;
     box-sizing: border-box;
-    content: '';
+    content: "";
     pointer-events: none;
     position: absolute;
-    width: 0; height: 0;
-    
-    #{$vertical}: 0; 
+    width: 0;
+    height: 0;
+
+    #{$vertical}: 0;
     #{$horizontal}: 0;
   }
 
   &::before {
-    $h-side: if($horizontal == 'left', 'right', 'left');
-    
+    $h-side: if($horizontal == "left", "right", "left");
+
     border-#{$vertical}-width: $width;
     border-#{$h-side}-width: $width;
   }
-  
+
   &::after {
-    $v-side: if($vertical == 'top', 'bottom', 'top');
-    
+    $v-side: if($vertical == "top", "bottom", "top");
+
     border-#{$v-side}-width: $width;
     border-#{$horizontal}-width: $width;
   }
-  
+
   &:hover {
     color: $hover;
-    
+
     &::before,
     &::after {
       border-color: $hover;
@@ -502,10 +534,14 @@
       width: 100%;
       height: 100%;
     }
-    
-    &::before { transition-delay: 0s, 0s, $duration; }
-    
-    &::after { transition-delay: 0s, $duration, 0s; }
+
+    &::before {
+      transition-delay: 0s, 0s, $duration;
+    }
+
+    &::after {
+      transition-delay: 0s, $duration, 0s;
+    }
   }
 }
 
@@ -516,10 +552,10 @@
 //=== Button styling, semi-ignore
 .book-btn {
   background: none;
-  border: 2px solid ;
+  border: 2px solid;
   cursor: pointer;
   line-height: 1.5;
-  font: 600 1.1rem 'Roboto Slab', sans-serif;
+  font: 600 1.1rem "Roboto Slab", sans-serif;
   padding: 10px 30px;
   letter-spacing: 0.05rem;
   // margin-top: 20px;
@@ -527,7 +563,7 @@
   margin: 0 auto;
   display: block;
   margin-top: 20px;
-  
+
   // &:focus { outline: 2px dotted #fafafa; }
 }
 
@@ -560,42 +596,50 @@
       font-weight: 600;
     }
   }
-  @mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+  @mixin btn-border-drawing(
+    $color: #ccc,
+    $hover: black,
+    $width: 2px,
+    $vertical: top,
+    $horizontal: left,
+    $duration: 0.25s
+  ) {
     box-shadow: inset 0 0 0 $width $color;
     color: $color;
     transition: color $duration calc($duration / 3);
     position: relative;
-    
+
     &::before,
-    &::after { 
+    &::after {
       border: 0 solid transparent;
       box-sizing: border-box;
-      content: '';
+      content: "";
       pointer-events: none;
       position: absolute;
-      width: 0; height: 0;
-      
-      #{$vertical}: 0; 
+      width: 0;
+      height: 0;
+
+      #{$vertical}: 0;
       #{$horizontal}: 0;
     }
-  
+
     &::before {
-      $h-side: if($horizontal == 'left', 'right', 'left');
-      
+      $h-side: if($horizontal == "left", "right", "left");
+
       border-#{$vertical}-width: $width;
       border-#{$h-side}-width: $width;
     }
-    
+
     &::after {
-      $v-side: if($vertical == 'top', 'bottom', 'top');
-      
+      $v-side: if($vertical == "top", "bottom", "top");
+
       border-#{$v-side}-width: $width;
       border-#{$horizontal}-width: $width;
     }
-    
+
     &:hover {
       color: $hover;
-      
+
       &::before,
       &::after {
         border-color: $hover;
@@ -603,30 +647,36 @@
         width: 100%;
         height: 100%;
       }
-      
-      &::before { transition-delay: 0s, 0s, $duration; }
-      
-      &::after { transition-delay: 0s, $duration, 0s; }
+
+      &::before {
+        transition-delay: 0s, 0s, $duration;
+      }
+
+      &::after {
+        transition-delay: 0s, $duration, 0s;
+      }
     }
   }
-  
+
   .draw-border {
     @include btn-border-drawing(#ffffff, #e4b829, 2px, bottom, right);
   }
-  
+
   //=== Button styling, semi-ignore
   .btn {
     background: none;
-    border: 2px solid ;
+    border: 2px solid;
     cursor: pointer;
     line-height: 1.5;
-    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    font: 700 1.2rem "Roboto Slab", sans-serif;
     padding: 10px 30px;
     letter-spacing: 0.05rem;
     margin-top: 50px;
     margin-left: 20%;
-    
-    &:focus { outline: 2px dotted #fafafa; }
+
+    &:focus {
+      outline: 2px dotted #fafafa;
+    }
   }
   .slide {
     display: flex;
@@ -661,18 +711,17 @@
       margin-top: 50px;
     }
   }
-    .learn-more {
-      background-color:transparent;
+  .learn-more {
+    background-color: transparent;
+    color: #e4b829;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    i {
       color: #e4b829;
-      cursor: pointer;
-      margin: 0 auto;
-      display: block;
-      margin-top: 50px;
-      i {
-        color: #e4b829;
-      }
     }
-  
+  }
 
   .service {
     display: flex;
@@ -735,7 +784,7 @@
     margin-top: 50px;
   }
 }
- 
+
 @media screen and (max-width: 520px) {
   .background {
     background-image: url("../Image/bg.jpg") no-repeat center center fixed;
@@ -762,42 +811,50 @@
       margin-bottom: 25px;
     }
   }
-  @mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+  @mixin btn-border-drawing(
+    $color: #ccc,
+    $hover: black,
+    $width: 2px,
+    $vertical: top,
+    $horizontal: left,
+    $duration: 0.25s
+  ) {
     box-shadow: inset 0 0 0 $width $color;
     color: $color;
     transition: color $duration calc($duration / 3);
     position: relative;
-    
+
     &::before,
-    &::after { 
+    &::after {
       border: 0 solid transparent;
       box-sizing: border-box;
-      content: '';
+      content: "";
       pointer-events: none;
       position: absolute;
-      width: 0; height: 0;
-      
-      #{$vertical}: 0; 
+      width: 0;
+      height: 0;
+
+      #{$vertical}: 0;
       #{$horizontal}: 0;
     }
-  
+
     &::before {
-      $h-side: if($horizontal == 'left', 'right', 'left');
-      
+      $h-side: if($horizontal == "left", "right", "left");
+
       border-#{$vertical}-width: $width;
       border-#{$h-side}-width: $width;
     }
-    
+
     &::after {
-      $v-side: if($vertical == 'top', 'bottom', 'top');
-      
+      $v-side: if($vertical == "top", "bottom", "top");
+
       border-#{$v-side}-width: $width;
       border-#{$horizontal}-width: $width;
     }
-    
+
     &:hover {
       color: $hover;
-      
+
       &::before,
       &::after {
         border-color: $hover;
@@ -805,24 +862,28 @@
         width: 100%;
         height: 100%;
       }
-      
-      &::before { transition-delay: 0s, 0s, $duration; }
-      
-      &::after { transition-delay: 0s, $duration, 0s; }
+
+      &::before {
+        transition-delay: 0s, 0s, $duration;
+      }
+
+      &::after {
+        transition-delay: 0s, $duration, 0s;
+      }
     }
   }
-  
+
   .draw-border {
     @include btn-border-drawing(#ffffff, #e4b829, 2px, bottom, right);
   }
-  
+
   //=== Button styling, semi-ignore
   .btn {
     background: none;
-    border: 2px solid ;
+    border: 2px solid;
     cursor: pointer;
     line-height: 1.5;
-    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    font: 700 1.2rem "Roboto Slab", sans-serif;
     padding: 8px 25px;
     letter-spacing: 0.05rem;
     margin: 0;
@@ -830,7 +891,9 @@
     left: 50%;
     -ms-transform: translate(-50%);
     transform: translate(-50%);
-    &:focus { outline: 2px dotted #fafafa; }
+    &:focus {
+      outline: 2px dotted #fafafa;
+    }
   }
   .slide {
     display: inline-block;
@@ -846,8 +909,8 @@
       margin-bottom: 20px;
     }
   }
-  .view-all{
-    button:hover{
+  .view-all {
+    button:hover {
       border-color: #e4b829;
       color: #e4b829;
     }
@@ -889,7 +952,7 @@
       text-decoration: none;
       font-size: 13px;
     }
-    i{
+    i {
       text-decoration: none;
     }
   }
@@ -908,7 +971,7 @@
     margin-top: -30px;
     h2 {
       color: #ffffff;
-      text-align:center;
+      text-align: center;
       width: 170px;
       font-size: 13px;
     }
@@ -1031,13 +1094,85 @@
 @media screen and (min-width: 1500px) {
   .logo {
     h1 {
-      margin-left: 27%;
+      text-align: start;
     }
     h5 {
-      margin-left: 15%;
+      text-align: center;
     }
   }
-  .btn {
-    margin-left: 26%;
+  .travel {
+    display: flex;
+    // justify-content: center;
+    gap: 70px;
+    margin-top: 150px;
+    img {
+      width: 800px;
+      height: 650px;
+    }
+  }
+  
+  .text {
+    margin-top: 30px;
+  
+    h2 {
+      color: #ffffff;
+      text-align: center;
+    }
+    p {
+      color: #ffffff;
+      text-align: center;
+      width: 600px;
+      margin-top: 50px;
+    }
+  }
+  .learn-more {
+    background-color: transparent;
+    color: #e4b829;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    text-decoration: none;
+    border: none;
+    i {
+      color: #e4b829;
+      text-decoration: none;
+    }
+  }
+  
+  .service {
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+    img {
+      filter: brightness(60%);
+      margin-top: -170px;
+      width: 950px;
+      height: 650px;
+    }
+  }
+  .quote {
+    h2 {
+      color: #ffffff;
+      text-align: center;
+      margin-top: 100px;
+      width: 500px;
+    }
+  }
+  .quote-btn {
+    background: none;
+    border: 2px solid;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 600 1.1rem "Roboto Slab", sans-serif;
+    padding: 10px 30px;
+    letter-spacing: 0.05rem;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+  
+    // &:focus { outline: 2px dotted #fafafa; }
   }
 }
