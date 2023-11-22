@@ -205,8 +205,11 @@
     margin: 0 auto;
     display: block;
     margin-top: 50px;
+    text-decoration: none;
+    border: none;
     i {
       color: #e4b829;
+      text-decoration: none;
     }
   }
 
@@ -732,7 +735,7 @@
     margin-top: 50px;
   }
 }
-
+ 
 @media screen and (max-width: 520px) {
   .background {
     background-image: url("../Image/bg.jpg") no-repeat center center fixed;
@@ -861,7 +864,8 @@
   }
 
   .text {
-    margin-top: -3px;
+    margin-top: -80px;
+    position: relative;
     h2 {
       color: #ffffff;
       text-align: center;
@@ -871,16 +875,22 @@
       font-size: 11px;
       color: #ffffff;
       text-align: center;
-      width: 230px;
+      width: 180px;
       margin-top: 10px;
     }
     .learn-more {
       background-color: transparent;
-      color: #ffffff;
+      color: #e4b829;
       cursor: pointer;
       margin: 0 auto;
       display: block;
-      margin-top: 20px;
+      margin-top: 10px;
+      border: none;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    i{
+      text-decoration: none;
     }
   }
 
@@ -898,13 +908,13 @@
     margin-top: -30px;
     h2 {
       color: #ffffff;
-      text-align: center;
-      width: 250px;
-      font-size: 15px;
+      text-align:center;
+      width: 170px;
+      font-size: 13px;
     }
   }
   .quote-btn {
-    padding: 7px 25px;
+    padding: 5px 18px;
     background-color: transparent;
     border: 1px solid #ffffff;
     border-radius: 7px;
