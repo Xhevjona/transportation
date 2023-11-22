@@ -1101,78 +1101,22 @@
     }
   }
   .travel {
-    display: flex;
-    // justify-content: center;
-    gap: 70px;
-    margin-top: 150px;
+    gap: 100px;
     img {
       width: 950px;
       height: 750px;
     }
   }
   
-  .text {
-    margin-top: 30px;
-  
-    h2 {
-      color: #ffffff;
-      text-align: center;
-    }
-    p {
-      color: #ffffff;
-      text-align: center;
-      width: 600px;
-      margin-top: 50px;
-    }
-  }
-  .learn-more {
-    background-color: transparent;
-    color: #e4b829;
-    cursor: pointer;
-    margin: 0 auto;
-    display: block;
-    margin-top: 50px;
-    text-decoration: none;
-    border: none;
-    i {
-      color: #e4b829;
-      text-decoration: none;
-    }
-  }
-  
   .service {
-    display: flex;
-    justify-content: right;
-    gap: 50px;
+    gap: 100px;
     img {
-      filter: brightness(60%);
       margin-top: -170px;
       width: 1150px;
-      height: 750px;
+      height: 730px;
     }
   }
   .quote {
-    h2 {
-      color: #ffffff;
-      text-align: center;
-      margin-top: 100px;
-      width: 500px;
-    }
-  }
-  .quote-btn {
-    background: none;
-    border: 2px solid;
-    cursor: pointer;
-    line-height: 1.5;
-    font: 600 1.1rem "Roboto Slab", sans-serif;
-    padding: 10px 30px;
-    letter-spacing: 0.05rem;
-    margin-top: 50px;
-    margin-left: 15%;
-    margin: 0 auto;
-    display: block;
-    margin-top: 50px;
-  
-    // &:focus { outline: 2px dotted #fafafa; }
+    margin-top: 100px;
   }
 }
