@@ -689,10 +689,11 @@
     display: flex;
     gap: 40px;
     margin-top: 150px;
+
     .travel-img {
-      filter: brightness(70%);
-      width: 500px;
+      width: 350px;
       height: 300px;
+      
     }
   }
 
@@ -706,7 +707,7 @@
       font-size: 14px;
       color: #ffffff;
       text-align: center;
-      width: 350px;
+      width: 300px;
       margin-top: 10px;
     }
   }
@@ -725,12 +726,12 @@
   .service {
     display: flex;
     justify-content: right;
-    gap: 30px;
-    margin-top: 70px;
+    gap: 20px;
+    margin-top: 80px;
   }
   .quote-img {
     margin-top: -100px;
-    width: 500px;
+    width: 450px;
     height: 300px;
   }
   .service-group {
