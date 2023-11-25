@@ -577,21 +577,20 @@
   }
   .logo {
     h1 {
-      margin-top: -250px;
-      margin-left: 30%;
-      font-weight: 700;
-      color: rgb(233, 224, 224);
-      font-size: 50px;
-    }
-
-    h5 {
-      margin-top: 15px;
-      width: 500px;
-      color: rgb(233, 224, 224);
-      margin-left: 9%;
       text-align: center;
-      font-size: 25px;
+      margin: auto;
       font-weight: 600;
+      font-size: 50px;
+      color: rgb(233, 224, 224);
+      margin-top: -300px;
+    }
+    h5 {
+      width: 350px;
+      color: rgb(233, 224, 224);
+      margin: 0 auto;
+      margin-top: 10px;
+      font-size: 20px;
+      margin-bottom: 25px;
     }
   }
   @mixin btn-border-drawing(
@@ -667,11 +666,13 @@
     cursor: pointer;
     line-height: 1.5;
     font: 700 1.2rem "Roboto Slab", sans-serif;
-    padding: 10px 30px;
+    padding: 8px 25px;
     letter-spacing: 0.05rem;
-    margin-top: 40px;
-    margin-left: 28%;
-
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
     &:focus {
       outline: 2px dotted #fafafa;
     }
