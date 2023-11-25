@@ -575,12 +575,12 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     background-position: right center;
-    margin-left: 288px;
+    margin-left: 25vw;
   }
   .logo {
     h1 {
       margin-top: -280px;
-      margin-left: 22%;
+      // margin-left: 22%;
       font-weight: 700;
       color: rgb(233, 224, 224);
       font-size: 50px;
@@ -590,7 +590,7 @@
       margin-top: 20px;
       width: 500px;
       color: rgb(233, 224, 224);
-      margin-left: 40px;
+      // margin-left: 40px;
       text-align: center;
       font-size: 25px;
       font-weight: 600;
@@ -691,8 +691,8 @@
     margin-top: 150px;
 
     .travel-img {
-      width: 350px;
-      height: 300px;
+      width: 400px;
+      height: 350px;
       
     }
   }
@@ -732,7 +732,7 @@
   .quote-img {
     margin-top: -100px;
     width: 450px;
-    height: 300px;
+    height: 350px;
   }
   .service-group {
     display: flex;
