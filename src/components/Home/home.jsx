@@ -75,7 +75,7 @@ const home = () => {
       </div>
 
       <div className="travel">
-        <img src={RR} alt="rolls-royce" width={620} height={570} />
+        <img src={RR} alt="rolls-royce" className="travel-img" width={690} height={570} />
         <div className="text">
           <Fade right>
             <h2>TRAVEL WITH US</h2>
@@ -112,13 +112,13 @@ const home = () => {
             </Link>
           </Fade>
         </div>
-        <img src={Service} alt="travel" width={800} height={550} />
+        <img className="quote-img" src={Service} alt="travel" width={870} height={520} />
       </div>
 
       <div className="our-services">
         <h3>
           Our Services
-          <div className="hr-line">
+          <div className="hr-line"> 
             <hr />
           </div>
         </h3>
@@ -240,7 +240,7 @@ const home = () => {
             </p>
           </Fade>
           <div className="call-btn">
-            <button className="call-btn">Call Now 888-598-6555</button>
+            <button className="call-btn">Call Now 888-888-8888</button>
           </div>
           <button className="book-btn"> Book Online </button>
         </div>

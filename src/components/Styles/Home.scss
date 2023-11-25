@@ -689,16 +689,15 @@
     display: flex;
     gap: 40px;
     margin-top: 150px;
-    img {
+    .travel-img {
       filter: brightness(70%);
-      width: 450px;
-      height: 500px;
+      width: 500px;
+      height: 300px;
     }
   }
 
   .text {
-    margin-top: 30px;
-
+    margin-top: -50px;
     h2 {
       color: #ffffff;
       text-align: center;
@@ -707,8 +706,8 @@
       font-size: 14px;
       color: #ffffff;
       text-align: center;
-      width: 400px;
-      margin-top: 50px;
+      width: 350px;
+      margin-top: 10px;
     }
   }
   .learn-more {
@@ -717,7 +716,7 @@
     cursor: pointer;
     margin: 0 auto;
     display: block;
-    margin-top: 50px;
+    margin-top: 10px;
     i {
       color: #e4b829;
     }
@@ -727,11 +726,12 @@
     display: flex;
     justify-content: right;
     gap: 30px;
-    img {
-      margin-top: -100px;
-      width: 600px;
-      height: 400px;
-    }
+    margin-top: 70px;
+  }
+  .quote-img {
+    margin-top: -100px;
+    width: 500px;
+    height: 300px;
   }
   .service-group {
     display: flex;
@@ -743,7 +743,7 @@
     h2 {
       color: #ffffff;
       text-align: center;
-      margin-top: 90px;
+      margin-top: -50px;
       width: 300px;
       font-size: 18px;
     }
@@ -1102,21 +1102,23 @@
   }
   .travel {
     gap: 100px;
-    img {
-      width: 950px;
-      height: 750px;
-    }
   }
+  .travel-img {
   
+      width: 1050px;
+      height: 750px;
+    
+  }
   .service {
     gap: 100px;
-    img {
-      margin-top: -170px;
-      width: 1150px;
-      height: 730px;
-    }
+  }
+  .quote-img {
+    margin-top: -170px;
+    width: 1050px;
+    height: 730px;
+    
   }
   .quote {
-    margin-top: 100px;
+    margin-top: 40px;
   }
 }
