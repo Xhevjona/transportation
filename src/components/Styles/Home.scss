@@ -8,19 +8,9 @@
   margin-left: 270px;
 }
 .logo {
+  margin-top: -300px;
   .logo-img{
-    margin-top: -40vh;
 margin-left: 6vw;
-  }
-
-  h5 {
-    // margin-top: -40px;
-    width: 500px;
-    color: rgb(233, 224, 224);
-    margin-left: 40px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 600;
   }
 }
 
@@ -784,6 +774,8 @@ margin-left: 6vw;
   .logo {
     display: flex;
     justify-content: center;
+    margin-top: -200px;
+    margin-bottom: 200px;
  img{
   width: 300px;
   filter:contrast(100%);
@@ -866,6 +858,7 @@ margin-left: 6vw;
     padding: 8px 25px;
     letter-spacing: 0.05rem;
     position: absolute;
+    margin-top: 100px;
     left: 50%;
     -ms-transform: translate(-50%);
     transform: translate(-50%);
