@@ -565,8 +565,8 @@ margin-left: 6vw;
   .logo {
   display: flex;
   justify-content: center;
-  margin-top: -20px;
-  margin-bottom: -100px;
+  margin-top: -250px;
+  
   img{
     width: 400px;
   }
@@ -634,7 +634,7 @@ margin-left: 6vw;
   }
 
   .draw-border {
-    @include btn-border-drawing(#ffffff, #e4b829, 2px, bottom, right);
+    @include btn-border-drawing(#ddd5d5, #e4b829, 2px, bottom, right);
   }
 
   //=== Button styling, semi-ignore
