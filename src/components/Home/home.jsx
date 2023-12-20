@@ -34,7 +34,9 @@ const home = () => {
           <h5>The luxury everyone can afford.</h5>
         </Fade>
       </div>
+      <Link to="/online-booking">
     <button class="btn draw-border" >Book Now</button>
+    </Link>
       <div className="our-fleet">
         <h3>
           Our Fleet
@@ -133,7 +135,7 @@ const home = () => {
             Business travelers need a reliable, professional, and efficient car
             service.
           </p>
-          <span>See More</span>
+          <Link to="/services"><span onClick={scrollToTop}>See More</span></Link>
         </div>
         <div className="service2">
           <img src={Airport} alt="corporate" width={220} height={240} />
@@ -142,7 +144,7 @@ const home = () => {
             We provide reliable, comfortable and luxury airport transportation
             at affordable rates.
           </p>
-          <span>See More</span>
+          <Link to="/services"> <span onClick={scrollToTop}>See More</span></Link>
         </div>
         <div className="service3">
           <img src={Event} alt="corporate" width={220} height={240} />
@@ -151,7 +153,7 @@ const home = () => {
             Whatever your event, we can add that touch of elegance to your
             transportation plans.
           </p>
-          <span>See More</span>
+          <Link to="/services"> <span onClick={scrollToTop}>See More</span></Link>
         </div>
       </div>
 
@@ -242,7 +244,9 @@ const home = () => {
           <div className="call-btn">
             <button className="call-btn">Call Now 888-888-8888</button>
           </div>
-          <button className="book-btn"> Book Online </button>
+          <Link to="/online-booking">
+          <button className="book-btn" onClick={scrollToTop}> Book Online </button>
+          </Link>
         </div>
       </div>
     </div>

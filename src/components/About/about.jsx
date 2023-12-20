@@ -9,17 +9,24 @@ import Seat from "../Image/seat.png";
 import Book from "../Image/book.png";
 import Support from "../Image/support.png";
 import Hidden from "../Image/hidden.png";
+import { Link } from "react-router-dom";
 
 const about = () => {
-
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
   return (
     <div>
       <div className="about-bg">
         <h2>Travel With Us</h2>
       </div>
       <div className="buttonss">
-        <button>Contact Us</button>
-        <button className="book">Book Now</button>
+        <Link to="/contact">
+        <button onClick={scrollToTop}>Contact Us</button>
+        </Link>
+        <Link to="/online-booking">
+          <button className="book"onClick={scrollToTop}>Book Now</button>
+        </Link>
       </div>
       <div className="description">
         <h2>About Us</h2>
@@ -27,21 +34,22 @@ const about = () => {
           <hr />
         </div>
         <p>
-          -LOGO- caters to those who desire reliable, safe,
-          and comfortable transportation—full-service limousine rental from the
-          passenger transportation company with the most meticulously maintained
-          fleet and the most professional chauffeurs in Chicago and its
-          surrounding cities. For this reason, most consider -LOGO- for all of their limo service to O’Hare or Midway
-          Airport. But just in case we have not yet had the opportunity to serve
-          you, let us introduce ourselves. Established in 2007, -LOGO- maintains a fleet of 20 new luxury limousines and the
-          professional chauffeurs who drive them serve over 3000 satisfied
-          customers every month. We have proven time and time again how comfort,
-          safety and satisfaction can come at affordable rates and with
-          exceptional service. We offer limos to O’Hare and Midway airport and
-          also leisure services such as wedding limo service, prom stretch
-          limos, corporate transportation, and Chicago private tours. We are a
-          member of the NLA & BBB. We welcome the opportunity to earn your
-          business!
+          -LOGO- caters to those who desire reliable, safe, and comfortable
+          transportation—full-service limousine rental from the passenger
+          transportation company with the most meticulously maintained fleet and
+          the most professional chauffeurs in Chicago and its surrounding
+          cities. For this reason, most consider -LOGO- for all of their limo
+          service to O’Hare or Midway Airport. But just in case we have not yet
+          had the opportunity to serve you, let us introduce ourselves.
+          Established in 2007, -LOGO- maintains a fleet of 20 new luxury
+          limousines and the professional chauffeurs who drive them serve over
+          3000 satisfied customers every month. We have proven time and time
+          again how comfort, safety and satisfaction can come at affordable
+          rates and with exceptional service. We offer limos to O’Hare and
+          Midway airport and also leisure services such as wedding limo service,
+          prom stretch limos, corporate transportation, and Chicago private
+          tours. We are a member of the NLA & BBB. We welcome the opportunity to
+          earn your business!
         </p>
       </div>
 

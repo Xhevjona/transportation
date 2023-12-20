@@ -98,7 +98,9 @@ const fleet = () => {
               </div>
             </div>
           </div>
-          <button className="fleet-btn" >Book Now</button>
+          <Link to="/online-booking">
+          <button className="fleet-btn" onClick={scrollToTop}>Book Now</button>
+          </Link>
           <img src={Sedan1} alt="sedans" width={210} height={120} />
         </div></Link>
 
@@ -125,7 +127,9 @@ const fleet = () => {
               </div>
             </div>
           </div>
-          <button className="fleet-btn" >Book Now</button>
+          <Link to="/online-booking">
+          <button className="fleet-btn" onClick={scrollToTop}>Book Now</button>
+          </Link>
           <img src={Sedan2} alt="sedans" width={210} height={120} />
         </div></Link>
 
@@ -152,7 +156,9 @@ const fleet = () => {
               </div>
             </div>
           </div>
-          <button className="fleet-btn">Book Now</button>
+          <Link to="/online-booking">
+          <button className="fleet-btn" onClick={scrollToTop}>Book Now</button>
+          </Link>
           <img src={Sedan3} alt="sedans" width={210} height={120} />
         </div></Link>
 
@@ -179,7 +185,9 @@ const fleet = () => {
               </div>
             </div>
           </div>
-          <button className="fleet-btn" >Book Now</button>
+          <Link to="/online-booking">
+          <button className="fleet-btn" onClick={scrollToTop}>Book Now</button>
+          </Link>
           <img src={Sedan4} alt="sedans" width={210} height={120} />
         </div></Link>
         </Slider>
@@ -212,7 +220,9 @@ const fleet = () => {
               </div>
             </div>
           </div>
-          <button className="fleet-btn" >Book Now</button>
+          <Link to="/online-booking">
+          <button className="fleet-btn" onClick={scrollToTop}>Book Now</button>
+          </Link>
           <img src={Suv1} alt="sedans" width={210} height={120} />
         </div></Link>
 
@@ -239,7 +249,9 @@ const fleet = () => {
               </div>
             </div>
           </div>
-          <button className="fleet-btn" >Book Now</button>
+          <Link to="/online-booking">
+          <button className="fleet-btn" onClick={scrollToTop} >Book Now</button>
+          </Link>
           <img src={Suv2} alt="sedans" width={210} height={120} />
         </div></Link>
 
@@ -266,7 +278,9 @@ const fleet = () => {
               </div>
             </div>
           </div>
-          <button className="fleet-btn" >Book Now</button>
+          <Link to="/online-booking">
+          <button className="fleet-btn" onClick={scrollToTop} >Book Now</button>
+          </Link>
           <img src={Suv3} alt="sedans" width={210} height={120} />
         </div></Link>
 
@@ -293,7 +307,9 @@ const fleet = () => {
               </div>
             </div>
           </div>
-          <button className="fleet-btn">Book Now</button>
+          <Link to="/online-booking">
+          <button className="fleet-btn" onClick={scrollToTop}>Book Now</button>
+          </Link>
           <img src={Suv4} alt="sedans" width={210} height={120} />
         </div></Link>
         </Slider>
@@ -326,7 +342,9 @@ const fleet = () => {
               </div>
             </div>
           </div>
-          <button className="fleet-btn">Book Now</button>
+          <Link to="/online-booking">
+          <button className="fleet-btn" onClick={scrollToTop} >Book Now</button>
+          </Link>
           <img src={Limo1} alt="sedans" width={210} height={120} />
         </div></Link>
 
@@ -353,7 +371,9 @@ const fleet = () => {
               </div>
             </div>
           </div>
-          <button className="fleet-btn" >Book Now</button>
+          <Link to="/online-booking">
+          <button className="fleet-btn" onClick={scrollToTop}>Book Now</button>
+          </Link>
           <img src={Limo2} alt="sedans" width={230} height={120} />
         </div></Link>
         </Slider> 

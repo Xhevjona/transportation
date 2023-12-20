@@ -191,7 +191,7 @@ const Contact = () => {
                 <textarea
                   placeholder="Message"
                   className="message"
-                  name="message"
+                  name="message" 
                   value={formData.message}
                   onChange={handleChange}
                 />

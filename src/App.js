@@ -16,6 +16,7 @@ import Suburban from "./components/Pages/suburban";
 import Yukon from './components/Pages/yukon';
 import Limousine from './components/Pages/limousine';
 import Van from './components/Pages/van';
+import Booking from './components/Booking/booking';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route exact path="/gmc-yukon" element={<Yukon/>} />
           <Route exact path="/lincoln-stretch-limousine" element={<Limousine />} />
           <Route exact path="/sprinter-van" element={<Van />} />
+          <Route exact path="/online-booking" element={<Booking />} />
         </Routes>
       </Layout>
     </Router>

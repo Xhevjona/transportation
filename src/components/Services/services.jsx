@@ -17,7 +17,9 @@ const services = () => {
       <div className="service-header">
         <h5>Our Services</h5>
         <div className="buttons">
-          <button>Book Now</button>
+        <Link to="/online-booking">
+          <button onClick={scrollToTop}>Book Now</button>
+          </Link>
           <Link to="/contact"><button onClick={scrollToTop}>Get A Quote</button></Link>
         </div>
       </div>
