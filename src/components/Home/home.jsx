@@ -17,6 +17,7 @@ import Seat from "../Image/seat.png";
 import Book from "../Image/book.png";
 import Support from "../Image/support.png";
 import Hidden from "../Image/hidden.png";
+import Logo from "../Image/dreamdrive1.png";
 import { Link } from "react-router-dom";
 const home = () => {
 
@@ -28,10 +29,9 @@ const home = () => {
       <div className="background"></div> 
       <div className="logo">
         <Fade right>
-          <h1>LOGO</h1>
-        </Fade>
-        <Fade left>
-          <h5>The luxury everyone can afford.</h5>
+          <div className="logo-img">
+          <img src={Logo} alt="logo" width={500} />
+          </div> 
         </Fade>
       </div>
       <Link to="/online-booking">

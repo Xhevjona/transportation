@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/Header.scss";
+import Logo1 from "../Image/dreamdrive.png"
 import { NavLink } from "react-router-dom";
 function Header() {
   const scrollToTop = () => {
@@ -26,7 +27,7 @@ function Header() {
       <nav className="navbar" id="navbar" onClick={(e) => e.stopPropagation()}>
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            LOGO
+            <img src={Logo1} alt="logo" />
           </NavLink>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item" onClick={scrollToTop}>
