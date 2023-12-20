@@ -575,7 +575,8 @@ margin-left: 6vw;
   .logo {
   display: flex;
   justify-content: center;
-  margin-top: -10vh;
+  margin-top: -20px;
+  margin-bottom: -100px;
   img{
     width: 400px;
   }
@@ -784,7 +785,6 @@ margin-left: 6vw;
     display: flex;
     justify-content: center;
  img{
-  margin-top: 10vh;
   width: 300px;
   filter:contrast(100%);
 
@@ -865,7 +865,6 @@ margin-left: 6vw;
     font: 700 1.2rem "Roboto Slab", sans-serif;
     padding: 8px 25px;
     letter-spacing: 0.05rem;
-    margin-top: -8vh;
     position: absolute;
     left: 50%;
     -ms-transform: translate(-50%);
